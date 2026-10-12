@@ -1,0 +1,47 @@
+media:
+  input: images
+  output: /weather-forecast-story/images
+
+content:
+  - name: website_content
+    label: 网站内容管理
+    type: file
+    path: content/site.json
+    fields:
+      - name: characters
+        label: 人物档案
+        type: object
+        list: true
+        fields:
+          - { name: name, label: 中文名, type: string, required: true }
+          - { name: roman, label: 英文名, type: string }
+          - { name: role, label: 身份英文, type: string }
+          - { name: gender, label: 性别, type: string }
+          - { name: age, label: 年龄, type: string }
+          - { name: birthday, label: 生日, type: string }
+          - { name: height, label: 身高, type: string }
+          - { name: weight, label: 体重, type: string }
+          - { name: identity, label: 身份, type: string }
+          - { name: image, label: 人物图片, type: image }
+          - { name: quote, label: 人物台词, type: text }
+          - { name: description, label: 人物介绍, type: text }
+      - name: side_stories
+        label: 支线故事
+        type: object
+        list: true
+        fields:
+          - { name: title, label: 标题, type: string, required: true }
+          - { name: category, label: 分类, type: select, options: { values: [人物支线, 日常片段, 时间线补充, 特别篇] } }
+          - { name: characters, label: 出场人物, type: string }
+          - { name: timeline, label: 时间点, type: string }
+          - { name: summary, label: 简介, type: text }
+          - { name: body, label: 正文, type: rich-text }
+      - name: gallery
+        label: 约稿与画廊
+        type: object
+        list: true
+        fields:
+          - { name: title, label: 作品名称, type: string, required: true }
+          - { name: artist, label: 画师署名, type: string }
+          - { name: image, label: 上传图片, type: image, required: true }
+          - { name: description, label: 作品说明, type: text }
