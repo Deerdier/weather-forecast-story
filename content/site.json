@@ -1,0 +1,27 @@
+{
+  "characters": [
+    {
+      "name": "卡列尼亚",
+      "roman": "KALENIA",
+      "role": "WEATHER FORECASTER",
+      "gender": "男",
+      "age": "14",
+      "birthday": "9月28日",
+      "height": "164cm",
+      "weight": "46kg",
+      "identity": "天气预报员",
+      "image": "images/kalenia.jpg",
+      "quote": "天工气象局的天气预报，从来不会出错。",
+      "description": "每天微笑着播报明天，也始终相信天工气象局从未出错。直到那条烧焦的黑色发带再次出现，他所相信的晴天开始产生裂缝。"
+    }
+  ],
+  "side_stories": [],
+  "gallery": [
+    {
+      "title": "卡列尼亚 · 角色设计",
+      "artist": "作者署名待补充",
+      "image": "images/kalenia.jpg",
+      "description": "卡列尼亚角色设定图"
+    }
+  ]
+}
