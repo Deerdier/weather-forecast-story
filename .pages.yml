@@ -42,6 +42,5 @@ content:
         list: true
         fields:
           - { name: title, label: 作品名称, type: string, required: true }
-          - { name: artist, label: 画师署名, type: string }
           - { name: image, label: 上传图片, type: image, required: true }
           - { name: description, label: 作品说明, type: text }
